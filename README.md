@@ -30,11 +30,20 @@ out = color_transfer(src, target)
 cv2.imwrite("examples/1/output.jpeg", out)
 ```
 
-## Benchmark result
+## Transfer results
+
+| Source | Target | Output |
+|--|--|--|
+|![c1](examples/1/src.jpeg)|![g1](examples/1/target.png)| ![g1](examples/1/output.jpeg) |
+|![c1](examples/2/src.jpeg)|![g1](examples/2/target.png)| ![g1](examples/2/output.jpeg) |
+|![c1](examples/3/src.png)|![g1](examples/3/target.png)| ![g1](examples/3/output.jpeg) |
+|![c1](examples/4/src.png)|![g1](examples/4/target.png)| ![g1](examples/4/output.jpeg) |
+
+## Benchmark results
 
 - The benchmark results can be reproduce by running `python3 benchmark.py`
 
 
 | This implementation | [chia56028 implementation](https://github.com/chia56028/Color-Transfer-between-Images) |
 |--|--|
-| | |
+| 0.02 second | 1.337 second|
