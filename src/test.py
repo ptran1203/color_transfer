@@ -6,13 +6,13 @@ from color_transfer import color_transfer_pytorch
 from color_transfer.utils import rgb_to_lab, lab_to_rgb
 
 
-src = cv2.imread("../examples/1/src.jpeg")
-target = cv2.imread("../examples/1/target.png")
+src = cv2.imread("../examples/4/src.png")
+target = cv2.imread("../examples/4/target.png")
 
 out = color_transfer(src.copy(), target)
 
 
-cv2.imwrite("../examples/1/output.jpeg", out)
+cv2.imwrite("../examples/4/output.jpeg", out)
 
 
 # Test pytorch

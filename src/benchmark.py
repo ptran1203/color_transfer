@@ -3,7 +3,7 @@
 import time
 import cv2
 import numpy as np
-from src.color_transfer.numpy import get_mean_and_std, color_transfer
+from color_transfer.numpy import get_mean_and_std, color_transfer
 
 
 def color_transfer_chia56028(src, target):
@@ -33,8 +33,8 @@ def color_transfer_chia56028(src, target):
 def run_benchmark(func, iters):
     times = []
     
-    src = cv2.imread("examples/1/src.jpeg")
-    target = cv2.imread("examples/1/target.png")
+    src = cv2.imread("../examples/1/src.jpeg")
+    target = cv2.imread("../examples/1/target.png")
 
     for i in range(iters):
         start = time.time()
