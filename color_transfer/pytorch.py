@@ -49,10 +49,6 @@ def color_transfer_pytorch(
     """
     Transfer color of src image based on the color of target
 
-    ```
-
-    ```
-
     Args:
         src (torch.Tensor): Source image, with shape `(*, 3, H, W)`
         target (torch.Tensor): Target image, with shape `(*, 3, H, W)`

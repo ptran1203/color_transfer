@@ -11,12 +11,14 @@ def get_mean_and_std(x):
 
 def color_transfer(src: np.ndarray, target: np.ndarray) -> np.ndarray:
     """
-    Transfer color of src image based on the color of target
+    Transfer color of `src image` based on the color of `target`
 
-    The math:
-    ```
-    
-    ```
+    Args:
+        src (np.ndarray): Source image, array like `(H, W, 3)`
+        target (np.ndarray): Target image, array like `(H, W, 3)`
+
+    Returns:
+        np.ndarray: Transfered images, `(H, W, 3)`
     """
     src = cv2.cvtColor(src, cv2.COLOR_BGR2LAB)
     target = cv2.cvtColor(target, cv2.COLOR_BGR2LAB)
