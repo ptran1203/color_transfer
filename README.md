@@ -8,8 +8,9 @@
 ## Requirements
 
 - numpy
-- opencv-python
-- torch (If you want to use pytorch version)
+- opencv-python>=4.7.0.72
+- torch>=1.13.0
+
 
 ## Usage
 
