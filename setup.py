@@ -5,7 +5,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "color_transfer_py",
-    version = "0.0.4",
+    version = "0.0.5",
     author = "Phat Tran",
     author_email = "phatth1203@gmail.com",
     description = "Color transfer between images",

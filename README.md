@@ -15,7 +15,7 @@
 ## Usage
 
 ```bash
-pip install color_transfer_py==0.0.4
+pip install color_transfer_py
 ```
 
 ### Numpy usage
