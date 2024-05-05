@@ -14,13 +14,14 @@
 ## Usage
 
 ```bash
-git clone https://github.com/ptran1203/color_transfer
+pip install color_transfer_py==0.0.4
 ```
+
+### Numpy usage
 
 ```python
 import cv2
 from color_transfer import color_transfer
-
 
 src = cv2.imread("examples/1/src.jpeg")
 target = cv2.imread("examples/1/target.png")
@@ -28,6 +29,22 @@ target = cv2.imread("examples/1/target.png")
 out = color_transfer(src, target)
 
 cv2.imwrite("examples/1/output.jpeg", out)
+```
+
+### Pytorch usage
+
+```python
+import torch
+from color_transfer import color_transfer_pytorch
+
+# In pytorch, you can run multiple images at once
+# but images must have the same size
+
+src = torch.rand(4, 3, 224, 224)
+target = torch.rand(4, 3, 224, 224)
+
+outs = color_transfer_pytorch(src, target)
+# Outs shape: (4, 3, 224, 224), output range is [0, 1]
 ```
 
 ## Transfer results

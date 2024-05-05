@@ -1,2 +1,6 @@
 __pycache__
 *.pyc
+dist
+*.egg-info
+build.bat
+token
